@@ -1,17 +1,17 @@
 # Define display_board that accepts a board and prints
 # out the current state.
 
-board = [" O ", " X ", "   ", "   ", " X ", "   ", " X ", " O ", "   "]
+testboard = [" O ", " X ", "   ", "   ", " X ", "   ", " X ", " O ", "   "]
 
-def display_board
-  puts "#{board[0]}|#{board[1]}|#{board[2]}"
+def display_board(board)
+  puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
-  puts "#{board[3]}|#{board[4]}|#{board[5]}"
+  puts " #{board[3]} | #{board[4]} | #{board[5]} "
   puts "-----------"
-  puts "#{board[6]}|#{board[7]}|#{board[8]}"	
+  puts " #{board[6]} | #{board[7]} | #{board[8]} "	
 end
 
-print display_board(board)
+print display_board(testboard)
 
 #'Passed test, but stilll showing the following errors: An error occurred while loading ./spec/display_board_spec.rb.
 #Failure/Error:
